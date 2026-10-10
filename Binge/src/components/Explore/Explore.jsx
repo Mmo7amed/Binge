@@ -61,7 +61,7 @@ function Explore() {
                         isLoading ? <Loader />
                         : shows?.length > 0 ? shows.map((item) => (
                         <div key={item.show.id} className="col-12 col-sm-6 col-md-4 col-lg-3 text-light text-center">
-                            <Showscard />
+                            <Showscard cardId={item.show.id} cardName={item.show.name} cardImg={item.show.image?.medium || "https://via.placeholder.com/210x295?text=No+Image"} cardGen={item.show.genres} cardPrem={item.show.premiered} cardEnd={item.show.ended}/>
                         </div> 
                         )) : <h1 className='text-center text-light w-100'>Data Not Found!</h1> }
                 </div>

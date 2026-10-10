@@ -20,7 +20,7 @@ function App() {
       {path: '/home', element: <Home />},
       {path: '/shows', element: <Explore />},
       {path: '/watchlist', element: <Watchlist type='show' />},
-      {path: '/details', element: <Details />},      
+      {path: '/details/:id', element: <Details />},      
     ]},
   ])
   return (
