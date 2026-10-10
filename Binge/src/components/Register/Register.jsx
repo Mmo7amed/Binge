@@ -53,7 +53,7 @@ function Register() {
             <input className="form-check-input" type="checkbox" id="checkDefault" defaultValue="remember-me"/>
             <label className="form-check-label text-light" htmlFor="checkDefault">Remember me</label>
           </div>
-            <button className="btn btn-warning w-100 py-2 mt-2" type="submit">
+            <button className="btn btn-warning btn-outline-light text-dark w-100 py-2 mt-2" type="submit">
                 Sign up
           </button>
         </form>

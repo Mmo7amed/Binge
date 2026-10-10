@@ -28,7 +28,13 @@
     }
 }
 
-.button-primary:hover{
-    background-color: black;
-    color: white;
+.buttonPrimary{
+    background-color: rgba(0, 0, 0, 0.874) !important;
+    color: white !important;
 }
+
+.buttonPrimary:hover{
+    background-color: white !important;
+    color: #080808 !important;
+}
+

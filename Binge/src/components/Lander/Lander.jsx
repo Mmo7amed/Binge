@@ -7,7 +7,7 @@ function Lander() {
   return (
     <>
       <div className={styles.lander}>
-        <div className="text-center px-4">
+        <div className="text-center px-2 lh-lg">
           <h1 className="display-2 fw-bolder text-white mb-3 text-shadow">
             Welcome to <span style={{ color: "#ebc55d" }}>BINGE</span>
           </h1>
@@ -21,10 +21,11 @@ function Lander() {
           <div className="d-flex justify-content-center gap-3">
             <Link
               to="/signup"
-              className= 'button-primary btn btn-lg fw-bold px-5 py-3 shadow-lg border-0'
-              style={{ backgroundColor: "black", color: "white"}}>Get Started
+              className= {`${styles.buttonPrimary} btn btn-lg fw-bold px-5 py-3 shadow-lg border-0`}>
+                Get Started
             </Link>
-            <Link to="/login" className="button-secondary btn btn-outline-light btn-lg fw-bold px-5 py-3 shadow-lg">Log In
+            <Link to="/login" className="btn btn-outline-light btn-lg fw-bold px-5 py-3 shadow-lg">
+                Log In
             </Link>
           </div>
         </div>
