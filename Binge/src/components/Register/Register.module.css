@@ -1,0 +1,40 @@
+.registerBackg {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        -45deg, 
+        #080808, 
+        #800000, 
+        #F7971E, 
+        #ebc55d, 
+        #FFD200
+    );
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gradientMove 8s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card.container2 {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 16px;
+}
+
+.header{
+    color: whitesmoke;
+    margin: 1.5rem;
+}
