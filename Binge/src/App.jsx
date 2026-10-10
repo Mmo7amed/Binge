@@ -18,8 +18,7 @@ function App() {
 
     {element: <Layout />, children: [
       {path: '/home', element: <Home />},
-      {path: '/movies', element: <Explore type='movie' />},
-      {path: '/shows', element: <Explore type='show' />},
+      {path: '/shows', element: <Explore />},
       {path: '/watchlist', element: <Watchlist type='show' />},
       {path: '/details', element: <Details />},      
     ]},

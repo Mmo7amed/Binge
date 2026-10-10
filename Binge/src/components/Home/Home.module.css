@@ -1,0 +1,14 @@
+.homeBackg {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0;
+}
+
+.searchInput:focus {
+    background-color: #212529 !important;
+    color: white !important;
+    border-color: #ebc55d !important;
+    box-shadow: 0 0 0 0.25rem rgba(235, 197, 93, 0.25) !important;
+}

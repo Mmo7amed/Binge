@@ -1,0 +1,12 @@
+.layoutBackg{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #434343, #030303);
+}
+
+.layoutMain{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

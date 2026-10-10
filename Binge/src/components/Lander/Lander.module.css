@@ -5,15 +5,13 @@
         -45deg, 
         #080808, 
         #800000, 
-        #F7971E, 
-        #ebc55d, 
-        #FFD200
+        #F7971E
     );
     background-size: 400% 400%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: gradientMove 8s ease-in-out infinite;
+    animation: gradientMove 20s ease-in-out infinite;
 }
 
 @keyframes gradientMove {

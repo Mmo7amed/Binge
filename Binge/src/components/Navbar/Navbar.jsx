@@ -29,12 +29,11 @@ function Navbar() {
 
                 <div className="collapse navbar-collapse" id="bingeNav">
                     
-                    <ul className="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold fs-5 gap-3">
+                    <ul className="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold fs-5 gap-3 p-2">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/home">Home</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/movies">Movies</NavLink>
+                            <NavLink className="nav-link" to="/home">
+                                Home
+                            </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/shows">TV Shows</NavLink>
@@ -43,19 +42,11 @@ function Navbar() {
                             <NavLink className="nav-link" to="/watchlist">Watchlist</NavLink>
                         </li>
                     </ul>
-
-                    <form className="d-flex align-items-center gap-2" role="search">
-                        <input 
-                            className="form-control bg-dark text-light border-secondary shadow-none" 
-                            type="search" 
-                            placeholder="Search titles..." 
-                            aria-label="Search" 
-                        />
-                        <button className="btn px-4 fw-bold text-dark" style={{ backgroundColor: '#ebc55d' }} type="submit">
-                            Search
+                    <Link to='/'>
+                        <button className={`${styles.logoutBtn} btn px-4 fw-bold text-light`}>
+                            Log Out
                         </button>
-                    </form>
-                    
+                    </Link>
                 </div>
             </div>
         </nav>
