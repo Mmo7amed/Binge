@@ -14,7 +14,7 @@ function Register() {
 
   return (
     <>
-      <div className={styles.registerBackg}>
+      <div className={`${styles.registerBackg} min-vh-100 d-flex align-items-center justify-content-center p-3`}>
       <div className="card p-4 text-center bg-dark m-auto shadow-lg" style={{ width: '100%', maxWidth: '450px' }}>
         <form onSubmit={handleRegister}>
           <img src={logo} alt="Binge Logo" className="rounded mb-3" style={{width: '60px', height: '60px'}}/>

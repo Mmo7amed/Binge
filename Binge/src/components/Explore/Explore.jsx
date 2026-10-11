@@ -1,13 +1,16 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Showscard from '../showscard/Showscard';
 import { Loader } from 'lucide-react';
 
 function Explore() {
 
+    const location = useLocation();
+    const initialSearch = location.state?.searchTerm || "";
+
     const [shows, setShows] = useState([]);
-    const [searchQuery, setSearchQuery] = useState(``);
+    const [searchQuery, setSearchQuery] = useState(initialSearch);
     const [isLoading, setIsLoading] = useState(true);
 
     const getShows = async (searchTerm) => {
@@ -34,7 +37,7 @@ function Explore() {
     }
 
         useEffect(() =>{
-        getShows("");
+        getShows(initialSearch);
     },[])
 
     const handleSearch = (e) => {
@@ -61,7 +64,7 @@ function Explore() {
                         isLoading ? <Loader />
                         : shows?.length > 0 ? shows.map((item) => (
                         <div key={item.show.id} className="col-12 col-sm-6 col-md-4 col-lg-3 text-light text-center">
-                            <Showscard cardId={item.show.id} cardName={item.show.name} cardImg={item.show.image?.medium || "https://via.placeholder.com/210x295?text=No+Image"} cardGen={item.show.genres} cardPrem={item.show.premiered} cardEnd={item.show.ended}/>
+                            <Showscard cardId={item.show.id} cardName={item.show.name} cardImg={item.show.image?.medium || "https://via.placeholder.com/210x295?text=No+Image"} cardGen={item.show.genres} cardPrem={item.show.premiered} cardEnd={item.show.ended} cardRating={item.show.rating?.average}/>
                         </div> 
                         )) : <h1 className='text-center text-light w-100'>Data Not Found!</h1> }
                 </div>

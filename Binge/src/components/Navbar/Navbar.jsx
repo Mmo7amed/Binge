@@ -43,7 +43,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <Link to='/'>
-                        <button className={`${styles.logoutBtn} btn px-4 fw-bold text-light`}>
+                        <button className={`${styles.logoutBtn} btn px-4 fw-bold text-dark`}>
                             Log Out
                         </button>
                     </Link>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Lander from './components/Lander/Lander'
@@ -9,6 +8,8 @@ import Watchlist from './components/Watchlist/Watchlist'
 import Details from './components/Details/Details'
 import Layout from './components/Layout/Layout'
 import Home from './components/Home/Home'
+
+
 
 function App() {
   const routes = createBrowserRouter([

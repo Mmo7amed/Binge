@@ -12,3 +12,65 @@
     border-color: #ebc55d !important;
     box-shadow: 0 0 0 0.25rem rgba(235, 197, 93, 0.25) !important;
 }
+
+.showcaseGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    height: 480px;
+    width: 100%;
+}
+
+.showcaseCard {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.showcaseCard:hover {
+    transform: translateY(-5px);
+    border: 2px solid #ebc55d;
+}
+
+.showcaseCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
+    padding: 20px 15px 10px;
+    text-align: left;
+}
+
+.card0 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+@media (max-width: 991px) {
+    .showcaseGrid {
+        height: 400px;
+        margin-top: 2rem;
+    }
+}
+
+.watchList{
+    background-color: #ebc55d;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+}
