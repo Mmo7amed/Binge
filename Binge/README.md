@@ -1,16 +1,47 @@
-# React + Vite
+# Binge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Binge is a modern TV show discovery and tracking web application built with React. It provides a premium, cinematic interface for browsing television shows using the TVMaze API. The application allows users to search for their favorite shows, view detailed information, and manage a personalized watchlist complete with custom ratings and tracking notes. 
 
-Currently, two official plugins are available:
+## Features
+- **Effortless Discovery**: Search through a massive database of television shows instantly with real-time API integration.
+- **Persistent Watchlist**: Add shows to a dedicated Watchlist managed seamlessly with Redux state.
+- **Custom Notes & Ratings**: Track your streaming progress by assigning star ratings and personal text notes to saved shows.
+- **Premium Cinematic UI**: A sleek, dark-themed browsing experience featuring animated gradient backgrounds and a responsive "Bento Box" showcase grid.
+- **Detailed Profiles**: View comprehensive show data including high-quality posters, genres, premiere dates, status, and plot summaries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+### Frontend
+- **React**: Modern JavaScript library for building user interfaces
+- **React Router**: For dynamic, seamless page navigation (`/home`, `/shows`, `/details/:id`, `/watchlist`)
+- **Redux Toolkit**: For global state management, specifically handling the persistent Watchlist
+- **Bootstrap 5**: For responsive grid layouts and pre-styled components
+- **CSS Modules**: For scoped, component-level styling and custom animations
+- **Axios**: For handling asynchronous HTTP requests to the API
+- **Lucide React**: For clean, modern SVG icons (like loading spinners)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Development Tools
+- **Vite**: Next-generation frontend tooling for blazing-fast development and optimized builds
+- **ESLint**: For code linting and maintaining code quality
+- **npm**: Package manager for JavaScript
 
-## Expanding the ESLint configuration
+### API
+- **TVMaze API**: Free, robust RESTful API that provides extensive television show data, schedules, and images.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v7 or higher)
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone [https://github.com/Mmo7amed/Binge.git](https://github.com/Mmo7amed/Binge.git)
+   cd binge
+
+2. npm install
+
+3. npm run dev (Open your browser and navigate to http://localhost:5173)
