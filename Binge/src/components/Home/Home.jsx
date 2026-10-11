@@ -117,7 +117,7 @@ function Home() {
           
         <div className="col d-flex flex-column align-items-start gap-2">
             <h2 className="fw-bold text-light display-6 mb-3">
-              Why use <span style={{ color: '#ebc55d' }}>Bingo?</span>
+              Why use <span style={{ color: '#ebc55d' }}>Binge?</span>
             </h2>
             <p className="text-light opacity-75 mb-4 fs-5">
               What are you waiting for? Start adding your favorite TV Shows <br /> to your personal watchlist right now!
